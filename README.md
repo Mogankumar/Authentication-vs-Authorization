@@ -178,7 +178,7 @@ Use one of the following signing algorithms to sign the json payload (most commo
 jwt.encode(payload, JWT_SECRET, algorithm="HS256")
 ```
 
-This signed payload will be of a long strin of alphanumeric characters. Once this is created, return it to client.
+This signed payload will be of a long string of alphanumeric characters. Once this is created, return it to client.
 
 #### STEP 3 | PROTECT ROUTES
 
