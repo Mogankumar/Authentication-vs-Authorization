@@ -36,26 +36,28 @@ Maybe you can enter the lobby but not the server room.
 
 ---
 
-Let's create a simple JWT Authentication:
-
-Proposed Repo structure
-
-```
-authentication-vs-authorization/
-├── diagrams/
-│   ├── authentication-flow.png
-│   └── authorization-flow.png
-├── src/
-│   ├── python/
-├── docs/
-│   ├── authentication.md
-│   ├── authorization.md
-│   └── jwt.md
-|   └── bcrypt.md
-```
 
 📌 Install Dependencies
 
 ```python
-pip install flask pymongo bcrypt pyjwt python-dotenv
+pip install fastapi uvicorn pymongo bcrypt python-dotenv
+```
+
+🎯 Clone the repo from `main` branch
+
+```
+app/
+│── main.py
+│── database.py
+│── models.py
+│── routers/
+│     ├── auth.py
+│── utils/
+│     ├── jwt_handler.py
+│     ├── hashing.py
+```
+
+🚀 Run the server
+```
+uvicorn main:app --reload --port 8000
 ```
