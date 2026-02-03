@@ -10,10 +10,9 @@ Authentication is the process of verifying "Identity". Think of it like:
 - Entering an OTP
 
 In a typical application:
-1. User enters credentials
-2. Server verifies them
-3. If valid, then the user is authenticated
-4. A session or token (e.g., JWT) is issued
+
+![Screenshot 2026-02-03 at 2 16 07 PM](https://github.com/user-attachments/assets/948c65d0-a897-4a98-94d9-e686887c0c43)
+
 
 ### AUTHORIZATION - What are you allowed to do?
 
